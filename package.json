@@ -5,9 +5,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "run-p -r serve:*",
-    "serve:webpack": "webpack --watch",
-    "serve:serve": "serve www",
+    "start": "webpack-dev-server",
     "build": "webpack"
   },
   "author": "Daniel Noon",
@@ -21,7 +19,8 @@
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.3",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
   },
   "type": "module"
 }

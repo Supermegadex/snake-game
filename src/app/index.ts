@@ -2,8 +2,8 @@ import { Main } from './Main.scene';
 import { startGame } from 'gamedeck/lib/Game';
 
 const canvas = document.querySelector<HTMLCanvasElement>('canvas#box')!;
-canvas.width = 600;
-canvas.height = 600;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 const game = startGame(new Main(), {
   canvas
